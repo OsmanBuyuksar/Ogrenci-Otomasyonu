@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Ogrenci_Otomsyonu_VSProjesi
 {
-    public partial class LoginForm : Form
+    public partial class Student_Form : Form
     {
-        public LoginForm()
+        public Student_Form()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

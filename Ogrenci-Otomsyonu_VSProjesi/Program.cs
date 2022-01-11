@@ -16,7 +16,7 @@ namespace Ogrenci_Otomsyonu_VSProjesi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new LoginForm());
         }
     }
 }
