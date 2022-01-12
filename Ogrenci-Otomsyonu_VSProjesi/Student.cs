@@ -6,11 +6,19 @@ using System.Threading.Tasks;
 
 namespace Ogrenci_Otomsyonu_VSProjesi
 {
-    class Student
+    public class Student : User
     {
         public String name;
         public String surName;
-        public String gender;
-        public String studentNo;
+        public String department;
+        public String year;
+
+        public Student(string userName, string password, string name, string surName, string year, string department) : base(userName, password)
+        {
+            this.name = name;
+            this.surName = surName;
+            this.department = department;
+            this.year = year;
+        }
     }
 }

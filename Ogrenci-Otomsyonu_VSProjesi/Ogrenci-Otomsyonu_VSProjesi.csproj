@@ -75,6 +75,7 @@
     <Compile Include="Teacher_Form.Designer.cs">
       <DependentUpon>Teacher_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

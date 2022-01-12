@@ -16,10 +16,10 @@ namespace Ogrenci_Otomsyonu_VSProjesi
         private static string password = "1234";
         private static string database = "ogrenci_sistemi";
 
-        public static void connectDB()
+        public static MySqlConnection ConnectDB()
         {
             //SqlConnection con = new SqlConnection("server" + server + "user id = " + username + ";");
-            MySqlConnection con2;
+            MySqlConnection con2 = null;
             try
             {
                 string connectionString = $"Server={server};Database={database};UID={username};PWD={password};";
@@ -30,8 +30,9 @@ namespace Ogrenci_Otomsyonu_VSProjesi
             catch (Exception e)
             {
                 MessageBox.Show(e.ToString());
-                return;
+                //return null;
             }
+            return con2;
         } 
     }
 }
