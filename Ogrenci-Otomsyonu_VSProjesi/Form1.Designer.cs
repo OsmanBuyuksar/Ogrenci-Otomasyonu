@@ -44,7 +44,6 @@ namespace Ogrenci_Otomsyonu_VSProjesi
             this.Username_TextB.Size = new System.Drawing.Size(202, 20);
             this.Username_TextB.TabIndex = 1;
             this.Username_TextB.Text = "Kullanıcı adını giriniz";
-            this.Username_TextB.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Password_TextB
             // 
@@ -66,6 +65,7 @@ namespace Ogrenci_Otomsyonu_VSProjesi
             this.Login_Button.TabIndex = 3;
             this.Login_Button.Text = "Giriş";
             this.Login_Button.UseVisualStyleBackColor = true;
+            this.Login_Button.Click += new System.EventHandler(this.Login_Button_Click);
             // 
             // LoginForm
             // 

@@ -16,10 +16,11 @@ namespace Ogrenci_Otomsyonu_VSProjesi
         {
             InitializeComponent();
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Login_Button_Click(object sender, EventArgs e)
         {
-
+            Form studentForm = new Student_Form();
+            studentForm.Show();
+            DatabaseManager.connectDB();
         }
     }
 }
